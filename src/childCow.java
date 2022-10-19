@@ -1,7 +1,7 @@
 public class childCow extends Cow{
     protected boolean isCute;
 
-    public childCow(String animalName, int age, boolean isPredator, int calories, int milkCalorie, int MOP, int numOfCalving, boolean isCute) {
+    public childCow(String animalName, int age, boolean isPredator, double calories, double milkCalorie, int MOP, int numOfCalving, boolean isCute) {
         super(animalName, age, isPredator, calories, milkCalorie, MOP, numOfCalving);
         this.isCute = isCute;
     }

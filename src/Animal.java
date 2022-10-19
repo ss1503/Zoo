@@ -1,8 +1,16 @@
-public class Animal {
+public abstract class Animal {
     protected String animalName;
     protected int age;
     protected boolean isPredator;
-    protected int calories;
+    protected double calories;
+
+    public Animal(String animalName, int age, boolean isPredator, double calories) {
+        this.animalName = animalName;
+        this.age = age;
+        this.isPredator = isPredator;
+        this.calories = calories;
+    }
+
 
     public String getAnimalName() {
         return animalName;
@@ -28,21 +36,30 @@ public class Animal {
         isPredator = predator;
     }
 
-    public int getCalories() {
+    public double getCalories() {
         return calories;
     }
 
-    public void setCalories(int calories) {
+    public void setCalories(double calories) {
         this.calories = calories;
     }
 
-    public Animal(String animalName, int age, boolean isPredator, int calories) {
-        this.animalName = animalName;
-        this.age = age;
-        this.isPredator = isPredator;
-        this.calories = calories;
+
+
+    public double Eat()
+    {
+        return calories * 3;
     }
 
+    public void Sing()
+    {
+        System.out.println("Tzif Tzif");
+    }
+
+    public void Dance()
+    {
+        System.out.println("Dance Dance");
+    }
     @Override
     public String toString() {
         return "Animal{" +

@@ -1,7 +1,7 @@
 public class Hipo extends Mammal{
     protected int fatPrecentage;
 
-    public Hipo(String animalName, int age, boolean isPredator, int calories, int milkCalorie, int MOP, int fatPrecentage) {
+    public Hipo(String animalName, int age, boolean isPredator, double calories, int milkCalorie, int MOP, int fatPrecentage) {
         super(animalName, age, isPredator, calories, milkCalorie, MOP);
         this.fatPrecentage = fatPrecentage;
     }

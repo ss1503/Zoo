@@ -1,7 +1,7 @@
 public class Cow extends Mammal{
     protected int numOfCalving;
 
-    public Cow(String animalName, int age, boolean isPredator, int calories, int milkCalorie, int MOP, int numOfCalving) {
+    public Cow(String animalName, int age, boolean isPredator, double calories, double milkCalorie, int MOP, int numOfCalving) {
         super(animalName, age, isPredator, calories, milkCalorie, MOP);
         this.numOfCalving = numOfCalving;
     }
@@ -12,6 +12,11 @@ public class Cow extends Mammal{
 
     public void setNumOfCalving(int numOfCalving) {
         this.numOfCalving = numOfCalving;
+    }
+
+    public double Eat()
+    {
+        return super.Eat() * 0.25;
     }
 
     @Override

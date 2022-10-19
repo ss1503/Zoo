@@ -1,7 +1,7 @@
 public class Snake extends Reptile{
     protected boolean isPoisonous;
 
-    public Snake(String animalName, int age, boolean isPredator, int calories, int taleLength, boolean isPoisonous) {
+    public Snake(String animalName, int age, boolean isPredator, double calories, int taleLength, boolean isPoisonous) {
         super(animalName, age, isPredator, calories, taleLength);
         this.isPoisonous = isPoisonous;
     }
@@ -12,6 +12,12 @@ public class Snake extends Reptile{
 
     public void setPoisonous(boolean poisonous) {
         isPoisonous = poisonous;
+    }
+
+    public void Dance()
+    {
+        super.Dance();
+        System.out.println("Dance Dance");
     }
 
     @Override

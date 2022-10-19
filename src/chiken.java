@@ -1,7 +1,7 @@
 public class chiken extends Bird{
     protected boolean canFly;
 
-    public chiken(String animalName, int age, boolean isPredator, int calories, int flyHeight, int wingSpan, boolean canFly) {
+    public chiken(String animalName, int age, boolean isPredator, double calories, int flyHeight, int wingSpan, boolean canFly) {
         super(animalName, age, isPredator, calories, flyHeight, wingSpan);
         this.canFly = canFly;
     }

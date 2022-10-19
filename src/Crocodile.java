@@ -1,7 +1,7 @@
 public class Crocodile extends Reptile{
     protected boolean isDentalCare;
 
-    public Crocodile(String animalName, int age, boolean isPredator, int calories, int taleLength, boolean isDentalCare) {
+    public Crocodile(String animalName, int age, boolean isPredator, double calories, int taleLength, boolean isDentalCare) {
         super(animalName, age, isPredator, calories, taleLength);
         this.isDentalCare = isDentalCare;
     }
@@ -12,6 +12,11 @@ public class Crocodile extends Reptile{
 
     public void setDentalCare(boolean dentalCare) {
         isDentalCare = dentalCare;
+    }
+
+    public double Eat()
+    {
+        return super.Eat() * 2;
     }
 
     @Override

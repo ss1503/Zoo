@@ -1,7 +1,7 @@
-public class Reptile extends Animal{
+public abstract class Reptile extends Animal{
     protected int taleLength;
 
-    public Reptile(String animalName, int age, boolean isPredator, int calories, int taleLength) {
+    public Reptile(String animalName, int age, boolean isPredator, double calories, int taleLength) {
         super(animalName, age, isPredator, calories);
         this.taleLength = taleLength;
     }

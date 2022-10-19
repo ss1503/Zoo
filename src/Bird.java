@@ -1,8 +1,8 @@
-public class Bird extends Animal{
+public abstract class Bird extends Animal{
     protected int flyHeight;
     protected int wingSpan;
 
-    public Bird(String animalName, int age, boolean isPredator, int calories, int flyHeight, int wingSpan) {
+    public Bird(String animalName, int age, boolean isPredator, double calories, int flyHeight, int wingSpan) {
         super(animalName, age, isPredator, calories);
         this.flyHeight = flyHeight;
         this.wingSpan = wingSpan;
@@ -18,6 +18,23 @@ public class Bird extends Animal{
 
     public int getWingSpan() {
         return wingSpan;
+    }
+
+    public double Eat()
+    {
+        return super.Eat() / 2;
+    }
+
+    public void Sing()
+    {
+        super.Sing();
+        System.out.println("Tzif Tzif");
+    }
+
+    public void Dance()
+    {
+        super.Dance();
+        System.out.println("Dance Dance");
     }
 
     public void setWingSpan(int wingSpan) {
